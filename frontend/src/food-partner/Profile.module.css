@@ -1,0 +1,119 @@
+/* Container */
+.profileContainer {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #0d111c; /* dark navy */
+  color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Header */
+.profileHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.profileLogo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #2d3446;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #f9f9f9;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.businessName {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.address {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #bfc7d5;
+}
+
+.profileStats {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 12px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.statValue {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: #bfc7d5;
+}
+
+/* Video Grid */
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.videoBox {
+  background: #23293a;
+  border-radius: 4px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Desktop layout like Instagram */
+@media (min-width: 901px) {
+  .profileContainer {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  .profileHeader {
+    flex: 1;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .profileInfo {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .videoGrid {
+    flex: 2;
+  }
+}

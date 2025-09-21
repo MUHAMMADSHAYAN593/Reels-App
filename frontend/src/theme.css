@@ -1,0 +1,14 @@
+:root {
+  --color-bg-light: #181818;
+  --color-bg-dark: #232323;
+  --color-text-light: #f9f9f9;
+  --color-text-dark: #181818;
+  --color-primary: #4f8cff;
+  --color-border: #222;
+  --color-input-bg: #232323;
+  --color-input-bg-dark: #fff;
+  --color-input-border: #333;
+  --border-radius: 10px;
+  --transition: 0.2s;
+  --font-family: 'Inter', Arial, sans-serif;
+}
